@@ -1,45 +1,52 @@
-.Main-H1 {
-  font-family: "Indie Flower", cursive;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-
-  min-height: 70vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-
-.buttonM {
-    min-height: 7vh;
-    min-width: 7vh;
+.main-1 {
+    height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.Main-H1 {
+    font-family: "Indie Flower", cursive;
+    font-weight: 400;
+    text-align: center;
+}
 
-.buttonM:hover {
-        animation: bounce 6.0s;
+/* animatie */
+.fade-in {
+    opacity: 1 !important;
+    transition: opacity .8s ease;
+}
+
+#caretDown:hover,
+#caretRight:hover {
+    color: blue;
 }
 
 
-
-@keyframes bounce {
-  0%   { transform: translateY(1); }
-  50%  { transform: translateY(-240px); }
-  100%  { transform: translateY(4); }
+.horizontal-wrapper {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    width: 100vw;
+    height: 100vh;
 }
 
+.section {
+    min-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.h1-Main2 {
+    font-family: "Playwrite NL", cursive;
+    font-weight: 400;
+}
 
-
-body {
-    min-height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; /* zodat je H1 boven de button blijft */
+.h1-Main3 {
+    font-family: "Playwrite NL", cursive;
+    font-weight: 400;
 }
