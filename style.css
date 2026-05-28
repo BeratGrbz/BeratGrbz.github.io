@@ -1,3 +1,9 @@
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+
 .main-1 {
     height: 100vh;
     display: flex;
@@ -12,7 +18,7 @@
     text-align: center;
 }
 
-/* animatie */
+/* animatie. */
 .fade-in {
     opacity: 1 !important;
     transition: opacity .8s ease;
