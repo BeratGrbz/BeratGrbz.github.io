@@ -95,3 +95,13 @@ const dominoObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.4 });
 
 dominoCards.forEach(card => dominoObserver.observe(card));
+
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.getElementById("introScreen").style.display = "none";
+    }, 4000);
+});
+
+
+
