@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 setTimeout(() => {
     document.getElementById("introScreen").style.display = "none";
-}, 4000); // 4 sec = animatie + fade-out
+}, 4000);
 
 
 
