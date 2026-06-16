@@ -279,14 +279,34 @@ body{
     animation-delay:3.2s;
 }
 
+/* INTRO RESPONSIVE FIX */
 .moon-wrapper{
-    position:relative;
-    width:600px;
-    height:600px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    width: 90vw;
+    max-width: 450px;
+    height: 90vw;
+    max-height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.intro-rotate{
+    width: 45%;
+    max-width: 200px;
+}
+
+/* Greetings responsive */
+.greeting{
+    font-size: 1.1rem;
+}
+
+@media (max-width: 480px){
+    .greeting{
+        font-size: .9rem;
+    }
+}
+
 
 .intro-center{
     display:flex;
@@ -409,3 +429,88 @@ body{
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+
+
+
+/* CONTACT FORM FIXED */
+.contact-container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.contact-form{
+    width:100%;
+    max-width:550px;
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.input-group{
+    position:relative;
+}
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+    padding:14px 16px;
+    border:2px solid var(--text);
+    background:transparent;
+    border-radius:10px;
+    color:var(--text);
+    font-size:1rem;
+    outline:none;
+    transition:.3s;
+}
+
+.input-group label{
+    position:absolute;
+    top:50%;
+    left:16px;
+    transform:translateY(-50%);
+    color:var(--text);
+    pointer-events:none;
+    transition:.3s;
+    background:var(--bg);
+    padding:0 6px;
+}
+
+.input-group textarea + label{
+    top:20px;
+    transform:none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus{
+    border-color:#6c63ff;
+}
+
+.input-group input:focus + label,
+.input-group input:valid + label,
+.input-group textarea:focus + label,
+.input-group textarea:valid + label{
+    top:-10px;
+    font-size:.8rem;
+    color:#6c63ff;
+}
+
+.contact-btn{
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    background:#6c63ff;
+    color:white;
+    font-size:1.1rem;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.contact-btn:hover{
+    background:#554ee6;
+    transform:translateY(-2px);
+}
+
+
+

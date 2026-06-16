@@ -8,8 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+NL:wght@100..700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+NL:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <div id="introScreen">
@@ -41,36 +40,29 @@
 
 
 
+<nav class="navbar fixed-top custom-nav">
+    <div class="container-fluid px-4 nav-wrapper">
 
-
-
-<nav class="navbar navbar-expand-lg fixed-top custom-nav">
-    <div class="container-fluid px-5">
-
-        <a href="#" class="navbar-brand d-flex align-items-center">
+        <a href="#" class="navbar-brand d-flex align-items-center nav-logo">
             <img src="img/Schermafbeelding 2026-05-28 093006.png" class="logo-img" alt="logo">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <i class="bi bi-list fs-1"></i>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-end" id="navMenu">
-            <ul class="navbar-nav gap-4">
-                <li class="nav-item"><a class="nav-link fw-semibold" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link fw-semibold" href="#projects">Projects</a></li>
-            </ul>
-
-            <div class="theme-toggle ms-4">
-                <input type="checkbox" id="themeSwitch">
-                <label for="themeSwitch" class="toggle-label">
-                    <span class="toggle-ball"></span>
-                </label>
-            </div>
-
+        <ul class="nav-links d-flex gap-4">
+            <ul><a class="nav-link fw-semibold" href="#about">About</a></ul>
+            <ul><a class="nav-link fw-semibold" href="#projects">Projects</a></ul>
+            <ul><a class="nav-link fw-semibold" href="#contact">Contact</a></ul>
+        </ul>
+        
+        <div class="theme-toggle ms-3">
+            <input type="checkbox" id="themeSwitch">
+            <label for="themeSwitch" class="toggle-label">
+                <span class="toggle-ball"></span>
+            </label>
         </div>
+
     </div>
 </nav>
+
 
 <section id="home" class="vh-100 d-flex justify-content-center align-items-center">
     <h1 class="Main-H1 text-center">Portfolio of Berat</h1>
@@ -83,11 +75,19 @@
 <section class="section main-2" id="about">
     <h1 class="h1-Main2 mb-4">I am Berat Gurbuz,</h1>
 
-    <p class="lh-lg text-center w-75">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Cumque distinctio eligendi eos ex excepturi fugit incidunt laudantium maiores,
-        mollitia natus necessitatibus pariatur quae quaerat quia quidem reiciendis repudiandae saepe voluptate?
-    </p>
+   <p class="lh-lg text-center w-75">
+    "I’m a 17-year-old MBO 4 Software Development student at ROC Mondriaan with a strong passion for creativity, problem‑solving and bringing new ideas and perspectives to every project
+
+    I love exploring new ideas, building clean and functional solutions, and improving myself every day. 
+    My goal is to become a professional software developer, and I’m committed to growing and reaching my full potential in this field"
+
+    <br><br>
+    <strong style="font-size:1.05rem; letter-spacing:1px;">
+        Innovative • Analytical • Adaptive • Ambitious
+    </strong>
+    <br><br>
+</p>
+
 
     <div class="timeline-container">
 
@@ -128,7 +128,16 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card domino-card">
-                    <img src="img/project1.jpg" class="project-img" alt="">
+                    <img src="img/Schermafbeelding 2026-01-21 193059.png" class="project-img" alt="">
+                    <h3>Quiz over Basketbal</h3>
+                    <p>Mijn eerste project een quiz die ik had gemaakt over basketbal.</p>
+                    <a href="#" class="project-btn">Bekijk project</a>
+                </div>
+            </div>
+
+             <div class="col-12 col-sm-6 col-lg-3">
+                <div class="project-card domino-card">
+                    <img src="img/Schermafbeelding 2026-01-26 191914.png" class="project-img" alt="">
                     <h3>Quiz over Basketbal</h3>
                     <p>Mijn eerste project een quiz die ik had gemaakt over basketbal.</p>
                     <a href="#" class="project-btn">Bekijk project</a>
@@ -137,16 +146,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card domino-card">
-                    <img src="img/project2.jpg" class="project-img" alt="">
-                    <h3>Galgje</h3>
-                    <p>Een spel waarin je met letters of het hele woord het juiste woord kan raden.</p>
-                    <a href="#" class="project-btn">Bekijk project</a>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-6 col-lg-3">
-                <div class="project-card domino-card">
-                    <img src="img/project3.jpg" class="project-img" alt="">
+                    <img src="img/Schermafbeelding 2026-06-15 092457.png" class="project-img" alt="">
                     <h3>Dammen</h3>
                     <p>Een strategisch spel waarin je veel logica moet gebruiken.</p>
                     <a href="#" class="project-btn">Bekijk project</a>
@@ -155,7 +155,7 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card domino-card">
-                    <img src="img/project4.jpg" class="project-img" alt="">
+                    <img src="img/Schermafbeelding 2026-01-26 192317.png" class="project-img" alt="">
                     <h3>Extra Project</h3>
                     <p>Een vierde kaart zodat de rij compleet is.</p>
                     <a href="#" class="project-btn">Bekijk project</a>
@@ -166,13 +166,42 @@
     </div>
 </section>
 
-<section id="section4" class="section main-4">
-    <h1 class="h1-Main3 mb-4">Section 4</h1>
 
-    <p class="section4-text w-75 text-center">
+<section id="contact" class="section main-4">
+    <h1 class="h1-Main3 mb-4">Contact Me</h1>
 
+    <p class="section4-text w-75 text-center mb-5">
+        Let’s connect! Share your message with me and I’ll respond soon <i class="bi bi-envelope-open"></i>
     </p>
+
+    <div class="contact-container">
+
+        <form class="contact-form">
+
+            <div class="input-group">
+                <input type="text" required>
+                <label>Your Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" required>
+                <label>Email Address</label>
+            </div>
+
+            <div class="input-group">
+                <textarea rows="4" required></textarea>
+                <label>Your Message</label>
+            </div>
+
+            <button type="submit" class="contact-btn">Send Message</button>
+
+        </form>
+
+    </div>
 </section>
+
+
+
 
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
