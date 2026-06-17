@@ -2,7 +2,6 @@
     --bg:#fff;
     --text:#000;
     --nav-bg:rgba(255,255,255,.8);
-    --timeline-line:#000;
     --dot:#000;
     --card-bg:#f1f1f1;
 }
@@ -11,9 +10,12 @@
     --bg:#1b2430;
     --text:#f0f0f0;
     --nav-bg:rgba(27,36,48,.8);
-    --timeline-line:#9bb4d1;
     --dot:#c7d7eb;
     --card-bg:#222b38;
+}
+
+h2 {
+    font-family:"Playwrite NL",cursive;
 }
 
 body{
@@ -66,80 +68,6 @@ body{
     cursor:pointer;
 }
 
-.timeline-container{
-    position:relative;
-    width:100%;
-    max-width:700px;
-    margin-top:80px;
-    padding-bottom:150px;
-}
-
-.timeline-line{
-    position:absolute;
-    left:50%;
-    width:4px;
-    height:calc(100% - 120px);
-    background:var(--timeline-line);
-    transform:translateX(-50%);
-}
-
-.timeline-item{
-    position:relative;
-    width:50%;
-    margin:160px 0;
-    opacity:0;
-    transform:translateY(40px);
-    transition:.8s;
-}
-
-.timeline-item.show{
-    opacity:1;
-    transform:translateY(0);
-}
-
-.timeline-item.left{
-    text-align:right;
-}
-
-.timeline-item.right{
-    text-align:left;
-    left:50%;
-}
-
-.dot{
-    width:20px;
-    height:20px;
-    border-radius:50%;
-    background:var(--dot);
-    position:absolute;
-    top:0;
-}
-
-.timeline-item.left .dot{
-    right:-10px;
-}
-
-.timeline-item.right .dot{
-    left:-10px;
-}
-
-.arrow-container{
-    display:flex;
-    justify-content:center;
-    margin-top:120px;
-    transition:1s;
-}
-
-.arrow-icon{
-    font-size:3.5rem;
-    cursor:pointer;
-    transition:.3s;
-}
-
-.arrow-icon:hover{
-    transform:scale(1.15);
-    color:#555;
-}
 
 .project-card{
     background:var(--card-bg);
@@ -204,6 +132,7 @@ body{
 
 .main-4{
     justify-content:flex-start;
+    height: 10vh;
 }
 
 .section4-text{
@@ -279,7 +208,6 @@ body{
     animation-delay:3.2s;
 }
 
-/* INTRO RESPONSIVE FIX */
 .moon-wrapper{
     width: 90vw;
     max-width: 450px;
@@ -296,7 +224,6 @@ body{
     max-width: 200px;
 }
 
-/* Greetings responsive */
 .greeting{
     font-size: 1.1rem;
 }
@@ -432,7 +359,6 @@ body{
 
 
 
-/* CONTACT FORM FIXED */
 .contact-container{
     width:100%;
     display:flex;
@@ -510,6 +436,149 @@ body{
 .contact-btn:hover{
     background:#554ee6;
     transform:translateY(-2px);
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.social-links a i {
+    font-size: 2.4rem;
+    color: crimson;
+    transition: .3s ease;
+}
+
+.social-links a:hover i {
+    transform: scale(1.2);
+    color: turquoise;
+}
+
+
+
+.experience-section {
+    width: 100%;
+    max-width: 800px;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    height: 345px;
+}
+
+.exp-card {
+    background: var(--card-bg);
+    padding: 20px 25px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #00000020;
+    transition: .3s;
+}
+
+.exp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px #00000035;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exp-header h3 {
+    font-size: 1.3rem;
+    margin: 0;
+    color: var(--text);
+}
+
+.exp-date {
+    font-weight: 600;
+    color: #ff5722;
+}
+
+.exp-company {
+    margin: 5px 0 10px;
+    opacity: .8;
+}
+
+.exp-desc {
+    opacity: .85;
+    margin-bottom: 15px;
+}
+
+.exp-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.exp-tags span {
+    background: rgba(255, 87, 34, 0.15);
+    color: #ff5722;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+
+.experience-section {
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+.exp-card {
+    background: var(--card-bg);
+    padding: 25px 30px;
+    border-radius: 14px;
+    border-left: 4px solid var(--accent);
+    box-shadow: 0 5px 20px #00000020;
+    transition: .3s;
+}
+
+.exp-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px #00000035;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.exp-date {
+    color: black;
+    font-weight: 600;
+}
+
+.exp-company,
+.exp-desc {
+    opacity: .85;
+    margin: 8px 0;
+}
+
+.exp-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.exp-tags span {
+    background: rgba(107,156,255,.15);
+    border: 1px solid rgba(107,156,255,.3);
+    color: black;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: .85rem;
+    font-weight: 600;
+}
+
+.dark-mode .exp-tags span {
+    background: rgba(155,180,255,.15);
+    border-color: rgba(155,180,255,.3);
 }
 
 

@@ -11,10 +11,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+NL:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<body>
+
 <div id="introScreen">
-
     <div class="moon-wrapper">
-
         <span class="greeting g1">Hello</span>
         <span class="greeting g2">Hola</span>
         <span class="greeting g3">Bonjour</span>
@@ -27,42 +27,34 @@
         <span class="greeting g10">Привет</span>
         <span class="greeting g11">Olá</span>
         <span class="greeting g12">Hej</span>
-
         <img src="img/mymoon.png" class="intro-rotate" alt="">
-
     </div>
 
     <div class="loading-bar">
         <div class="loading-fill"></div>
     </div>
-
 </div>
-
-
 
 <nav class="navbar fixed-top custom-nav">
     <div class="container-fluid px-4 nav-wrapper">
-
         <a href="#" class="navbar-brand d-flex align-items-center nav-logo">
             <img src="img/Schermafbeelding 2026-05-28 093006.png" class="logo-img" alt="logo">
         </a>
 
         <ul class="nav-links d-flex gap-4">
-            <ul><a class="nav-link fw-semibold" href="#about">About</a></ul>
-            <ul><a class="nav-link fw-semibold" href="#projects">Projects</a></ul>
-            <ul><a class="nav-link fw-semibold" href="#contact">Contact</a></ul>
+            <ol><a class="nav-link fw-semibold" href="#about">About</a></ol>
+            <ol><a class="nav-link fw-semibold" href="#projects">Projects</a></ol>
+            <ol><a class="nav-link fw-semibold" href="#contact">Contact</a></ol>
         </ul>
-        
+
         <div class="theme-toggle ms-3">
             <input type="checkbox" id="themeSwitch">
             <label for="themeSwitch" class="toggle-label">
                 <span class="toggle-ball"></span>
             </label>
         </div>
-
     </div>
 </nav>
-
 
 <section id="home" class="vh-100 d-flex justify-content-center align-items-center">
     <h1 class="Main-H1 text-center">Portfolio of Berat</h1>
@@ -75,90 +67,83 @@
 <section class="section main-2" id="about">
     <h1 class="h1-Main2 mb-4">I am Berat Gurbuz,</h1>
 
-   <p class="lh-lg text-center w-75">
-    "I’m a 17-year-old MBO 4 Software Development student at ROC Mondriaan with a strong passion for creativity, problem‑solving and bringing new ideas and perspectives to every project
+    <p class="lh-lg text-center w-75">
+        <em>
+            I’m a 17-year-old MBO 4 Software Development student at ROC Mondriaan with a strong passion for creativity, problem‑solving and bringing new to every project.
+            I love exploring new ideas, building clean and functional solutions, and improving myself every day.
+            My goal is to become a professional software developer, and I’m committed to growing and reaching my full potential in this field."
+        </em>
+        <br><br>
+        <strong class="highlight-words">
+            Innovative • Analytical • Adaptive • Ambitious
+        </strong>
+        <br><br>
+    </p>
+</section>
 
-    I love exploring new ideas, building clean and functional solutions, and improving myself every day. 
-    My goal is to become a professional software developer, and I’m committed to growing and reaching my full potential in this field"
-
-    <br><br>
-    <strong style="font-size:1.05rem; letter-spacing:1px;">
-        Innovative • Analytical • Adaptive • Ambitious
-    </strong>
-    <br><br>
-</p>
-
-
-    <div class="timeline-container">
-
-        <div class="timeline-line"></div>
-
-        <div class="timeline-item hidden left">
-            <div class="dot"></div>
-            <p>1</p>
+<section class="section main-2.5">
+    <div class="experience-section">
+        <h2 class="d-flex justify-content-center">Languages I know</h2>
+        <div class="exp-card">
+            <div class="exp-header">
+                <h3>Student Software Developer</h3>
+                <span class="exp-date">2025 – Present</span>
+            </div>
+            <p class="exp-company"><i class="bi bi-geo-alt"></i>ROC Mondriaan</p>
+            <p class="exp-desc">
+                Fast‑learning, detail‑focused, and trustworthy. able to understand and build complex structures with confidence.
+            </p>
+            <div class="exp-tags">
+                <span>HTML & CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>bootstrap</span>
+                <span>GDScript</span>
+            </div>
         </div>
-
-        <div class="timeline-item hidden right">
-            <div class="dot"></div>
-            <p>Started Software Development at ROC Mondriaan</p>
-        </div>
-
-        <div class="timeline-item hidden left">
-            <div class="dot"></div>
-            <p>First real coding projects & portfolio</p>
-        </div>
-
-        <div class="timeline-item hidden right">
-            <div class="dot"></div>
-            <p>Working on becoming a full‑stack developer</p>
-        </div>
-
-        <div id="scrollRightHint" class="arrow-container opacity-0">
-            <i id="caretRight" class="bi bi-arrow-right-circle-fill arrow-icon"></i>
-        </div>
-
     </div>
 </section>
 
 <section id="projects" class="section main-3">
-    <h1 class="h1-Main3 mb-5">My Projects</h1>
+    <h1 class="h1-Main3 mb-5">Some of my Projects</h1>
 
     <div class="container">
         <div class="row g-4 justify-content-center">
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card domino-card">
-                    <img src="img/Schermafbeelding 2026-01-21 193059.png" class="project-img" alt="">
-                    <h3>Quiz over Basketbal</h3>
-                    <p>Mijn eerste project een quiz die ik had gemaakt over basketbal.</p>
-                    <a href="#" class="project-btn">Bekijk project</a>
-                </div>
-            </div>
-
-             <div class="col-12 col-sm-6 col-lg-3">
-                <div class="project-card domino-card">
-                    <img src="img/Schermafbeelding 2026-01-26 191914.png" class="project-img" alt="">
-                    <h3>Quiz over Basketbal</h3>
-                    <p>Mijn eerste project een quiz die ik had gemaakt over basketbal.</p>
-                    <a href="#" class="project-btn">Bekijk project</a>
+                    <img src="img/Schermafbeelding 2026-01-21 193059.png" class="project-img" alt="Basketball Quiz Project">
+                    <h3>Basketball Quiz</h3>
+                    <p>An interactive quiz designed to test and improve basketball knowledge.</p>
+                    <a href="#" class="project-btn">View Project</a>
                 </div>
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card domino-card">
-                    <img src="img/Schermafbeelding 2026-06-15 092457.png" class="project-img" alt="">
-                    <h3>Dammen</h3>
-                    <p>Een strategisch spel waarin je veel logica moet gebruiken.</p>
-                    <a href="#" class="project-btn">Bekijk project</a>
+                    <img src="img/Schermafbeelding 2026-01-26 191914.png" class="project-img" alt="Hangman Game Project">
+                    <h3>Hangman</h3>
+                    <p>A Hangman game where players guess letters to reveal the hidden word.</p>
+                    <a href="#" class="project-btn">View Project</a>
                 </div>
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card domino-card">
-                    <img src="img/Schermafbeelding 2026-01-26 192317.png" class="project-img" alt="">
-                    <h3>Extra Project</h3>
-                    <p>Een vierde kaart zodat de rij compleet is.</p>
-                    <a href="#" class="project-btn">Bekijk project</a>
+                    <img src="img/Schermafbeelding 2026-06-15 092457.png" class="project-img" alt="Game Project Keuzedeel">
+                    <h3>Game Project</h3>
+                    <p>A game project focused on game development, logic, and interactive gameplay.</p>
+                    <a href="#" class="project-btn">View Project</a>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3">
+                <div class="project-card domino-card">
+                    <img src="img/Schermafbeelding 2026-01-26 192317.png" class="project-img" alt="Checkers Game Project">
+                    <h3>Checkers</h3>
+                    <p>A strategic checkers game built with logic-based movement and gameplay rules.</p>
+                    <a href="#" class="project-btn">View Project</a>
                 </div>
             </div>
 
@@ -175,9 +160,7 @@
     </p>
 
     <div class="contact-container">
-
         <form class="contact-form">
-
             <div class="input-group">
                 <input type="text" required>
                 <label>Your Name</label>
@@ -194,14 +177,19 @@
             </div>
 
             <button type="submit" class="contact-btn">Send Message</button>
-
         </form>
+    </div>
 
+    <div class="social-links mt-5">
+        <a href="https://github.com/BeratGrbz" target="_blank" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/berat-gurbuz-74514a410/" target="_blank" aria-label="LinkedIn">
+            <i class="bi bi-linkedin"></i>
+        </a>
     </div>
 </section>
-
-
-
 
 <script src="script.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

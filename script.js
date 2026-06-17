@@ -17,14 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    setTimeout(() => {
-        document.getElementById("scrollDownHint").classList.add("fade-in");
-    }, 800);
-
-    document.getElementById("caretDown").addEventListener("click", () => {
-        document.querySelector("#about").scrollIntoView({ behavior: "smooth" });
-    });
-
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) entry.target.classList.add("show");
@@ -47,10 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
     });
 
-    setTimeout(() => {
-        document.getElementById("scrollNextProjects").classList.add("fade-in");
-    }, 1200);
-
     const fadeSections = document.querySelectorAll(".fade-section");
 
     const sectionObserver = new IntersectionObserver((entries) => {
@@ -72,13 +60,9 @@ document.addEventListener("DOMContentLoaded", () => {
     cards.forEach(card => cardObserver.observe(card));
 });
 
-
 setTimeout(() => {
     document.getElementById("introScreen").style.display = "none";
 }, 4000);
-
-
-
 
 const dominoCards = document.querySelectorAll('.domino-card');
 
@@ -95,7 +79,6 @@ const dominoObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.4 });
 
 dominoCards.forEach(card => dominoObserver.observe(card));
-
 
 window.addEventListener("load", () => {
     setTimeout(() => {
