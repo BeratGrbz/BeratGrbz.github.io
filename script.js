@@ -23,8 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, { threshold: 0.3 });
 
-    document.querySelectorAll(".timeline-item").forEach(item => observer.observe(item));
-
     const lastItem = document.querySelector(".timeline-item:last-child");
 
     const arrowObserver = new IntersectionObserver((entries) => {
@@ -34,10 +32,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }, { threshold: 0.5 });
 
     arrowObserver.observe(lastItem);
-
-    document.getElementById("caretRight").addEventListener("click", () => {
-        document.querySelector("#projects").scrollIntoView({ behavior: "smooth" });
-    });
 
     const fadeSections = document.querySelectorAll(".fade-section");
 
@@ -79,12 +73,6 @@ const dominoObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.4 });
 
 dominoCards.forEach(card => dominoObserver.observe(card));
-
-window.addEventListener("load", () => {
-    setTimeout(() => {
-        document.getElementById("introScreen").style.display = "none";
-    }, 4000);
-});
 
 
 

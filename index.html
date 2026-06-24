@@ -27,7 +27,7 @@
         <span class="greeting g10">Привет</span>
         <span class="greeting g11">Olá</span>
         <span class="greeting g12">Hej</span>
-        <img src="img/mymoon.png" class="intro-rotate" alt="">
+        <img src="img/mymoon.png" class="intro-rotate" alt="Moon image">
     </div>
 
     <div class="loading-bar">
@@ -38,14 +38,15 @@
 <nav class="navbar fixed-top custom-nav">
     <div class="container-fluid px-4 nav-wrapper">
         <a href="#" class="navbar-brand d-flex align-items-center nav-logo">
-            <img src="img/Schermafbeelding 2026-05-28 093006.png" class="logo-img" alt="logo">
+            <img src="img/Logo.png" class="logo-img" alt="logo">
         </a>
 
         <ul class="nav-links d-flex gap-4">
-            <ol><a class="nav-link fw-semibold" href="#about">About</a></ol>
-            <ol><a class="nav-link fw-semibold" href="#projects">Projects</a></ol>
-            <ol><a class="nav-link fw-semibold" href="#contact">Contact</a></ol>
+            <li><a class="nav-link fw-semibold" href="#about">About</a></li>
+            <li><a class="nav-link fw-semibold" href="#projects">Projects</a></li>
+            <li><a class="nav-link fw-semibold" href="#contact">Contact</a></li>
         </ul>
+
 
         <div class="theme-toggle ms-3">
             <input type="checkbox" id="themeSwitch">
@@ -111,28 +112,29 @@
     <div class="container">
         <div class="row g-4 justify-content-center">
 
+
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card domino-card">
-                    <img src="img/Schermafbeelding 2026-01-21 193059.png" class="project-img" alt="Basketball Quiz Project">
+                    <img src="img/basketball.png" class="project-img" alt="Basketball Quiz Project">
                     <h3>Basketball Quiz</h3>
-                    <p>An interactive quiz designed to test and improve basketball knowledge.</p>
-                    <a href="#" class="project-btn">View Project</a>
+                    <p>A basketball quiz to test your knowledge about basketball.</p>
+                    <a href="https://github.com/ROCMondriaanTIN/sd25-project-quiz-dreamteam" class="project-btn">View Project</a>
                 </div>
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card domino-card">
-                    <img src="img/Schermafbeelding 2026-01-26 191914.png" class="project-img" alt="Hangman Game Project">
+                    <img src="img/hangman.png" class="project-img" alt="Hangman Game Project">
                     <h3>Hangman</h3>
                     <p>A Hangman game where players guess letters to reveal the hidden word.</p>
-                    <a href="#" class="project-btn">View Project</a>
+                    <a href="https://github.com/ROCMondriaanTIN/st-sd-js-p02-oefen-project-1a" class="project-btn">View Project</a>
                 </div>
             </div>
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card domino-card">
-                    <img src="img/Schermafbeelding 2026-06-15 092457.png" class="project-img" alt="Game Project Keuzedeel">
-                    <h3>Game Project</h3>
+                    <img src="img/Gameproj.png" class="project-img" alt="Godot game Project">
+                    <h3>Godot Game Project</h3>
                     <p>A game project focused on game development, logic, and interactive gameplay.</p>
                     <a href="#" class="project-btn">View Project</a>
                 </div>
@@ -140,10 +142,10 @@
 
             <div class="col-12 col-sm-6 col-lg-3">
                 <div class="project-card domino-card">
-                    <img src="img/Schermafbeelding 2026-01-26 192317.png" class="project-img" alt="Checkers Game Project">
+                    <img src="img/Dammen.png" class="project-img" alt="Checkers Game Project">
                     <h3>Checkers</h3>
                     <p>A strategic checkers game built with logic-based movement and gameplay rules.</p>
-                    <a href="#" class="project-btn">View Project</a>
+                    <a href="https://github.com/ROCMondriaanTIN/roc-mondriaan-st-2025-sd25-proj-p02-build-your-game-empty-repo" class="project-btn">View Project</a>
                 </div>
             </div>
 
@@ -159,26 +161,26 @@
         Let’s connect! Share your message with me and I’ll respond soon <i class="bi bi-envelope-open"></i>
     </p>
 
-    <div class="contact-container">
-        <form class="contact-form">
-            <div class="input-group">
-                <input type="text" required>
-                <label>Your Name</label>
-            </div>
+    <form action="contact.php" method="POST" class="contact-form">
 
-            <div class="input-group">
-                <input type="email" required>
-                <label>Email Address</label>
-            </div>
+        <div class="input-group">
+            <input type="text" name="name" required>
+            <label>Your Name</label>
+        </div>
 
-            <div class="input-group">
-                <textarea rows="4" required></textarea>
-                <label>Your Message</label>
-            </div>
+        <div class="input-group">
+            <input type="email" name="email" required>
+            <label>Email Address</label>
+        </div>
 
-            <button type="submit" class="contact-btn">Send Message</button>
-        </form>
-    </div>
+        <div class="input-group">
+            <textarea name="message" rows="4" required></textarea>
+            <label>Your Message</label>
+        </div>
+
+        <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+
 
     <div class="social-links mt-5">
         <a href="https://github.com/BeratGrbz" target="_blank" aria-label="GitHub">
